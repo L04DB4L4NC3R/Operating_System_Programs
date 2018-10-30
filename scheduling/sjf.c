@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 void main(){
-    int n,bt[20],p[20],i,pos,j,temp,wt[20],tat[20],total,avg_wait,avg_tat;
+    int n,bt[20],p[20],i,pos,j,temp,wt[20],tat[20],total;
+    float avg_wait,avg_tat;
     printf("Enter the number of processes \t");
     scanf("%d",&n);
 
@@ -28,7 +29,7 @@ void main(){
 
     // calculate wait time and average
     wt[0]=0;    // because wait time of first is 0
-    for(j=0;i<n;i++){
+    for(i=1;i<n;i++){
         wt[i]=0;
         for(j=0;j<i;j++){
             wt[i]+=bt[j];
