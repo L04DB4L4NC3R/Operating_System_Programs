@@ -13,7 +13,7 @@ int findLRU(int timee[], int n){
 
 
 void main(){
-    int fault, counter, i, j, frames[10], pages[10], fno, pno, f1, f2, timee[10], pos;
+    int fault, counter=0, i, j, frames[10], pages[10], fno, pno, f1, f2, timee[10], pos;
 
     printf("\nEnter the number of frames:\t");
     scanf("%d",&fno);
@@ -45,6 +45,7 @@ void main(){
                     counter++;
                     fault++;
                     frames[j]=pages[i];
+                    timee[j]=counter;
                     f2=1;
                     break;
                 }
