@@ -66,7 +66,7 @@ void accept(int A[][10], int N[][10], int W[][10], int M[][10], int *n, int *m){
 
 
 
-void banker(int A[][10], int N[][10], int W[][10], int M[][10], int n, int m){
+int banker(int A[][10], int N[][10], int W[][10], int M[][10], int n, int m){
     int Flag[10], G[1][10], flag=0, pflag=0, a[10], i,j,k,x=0;
 
     for(i=0;i<n;i++)
@@ -100,6 +100,7 @@ void banker(int A[][10], int N[][10], int W[][10], int M[][10], int n, int m){
             for(i=0;i<n;i++){
                 printf("\n%d",a[i]);
             }
+            printf("\n");
             return 1;
         }
     }
@@ -121,5 +122,5 @@ void main(){
     int n,m;
     printf("\n DEADLOCK AVOIDANCE USING BANKER'S ALGORITHM\n");
     accept(A,N,M,W,&n,&m);
-    //banker(A,N,W,n,m);
+    banker(A,N,W,M,n,m);
 }
