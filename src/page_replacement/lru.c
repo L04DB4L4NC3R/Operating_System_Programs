@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-int findLRU(int time[], int n){
-    int t=time[0];
+int findLRU(int timee[], int n){
+    int t=timee[0], pos;
     for(int i=1;i<n;i++){
-        if(t>time[i])
-            t=time[i];
+        if(t>timee[i]){
+            t=timee[i];
+            pos=i;
+        }
     }
-    return t;
+    return pos;
 }
 
 
