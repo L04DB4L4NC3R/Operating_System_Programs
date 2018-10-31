@@ -1,12 +1,12 @@
 ## Operating systems 
-Code that runs underneath your operating system
----
+
+code that runs underneath your operating system
 
 
 <br />
 <br />
 
-### To run code that uses pthreads
+### To run programs that use pthread
 
 <br />
 
