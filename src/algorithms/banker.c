@@ -42,7 +42,7 @@ void accept(int A[][10], int N[][10], int W[][10], int M[][10], int *n, int *m){
     }
 
 
-    printf("\nAllocation matrix");
+    printf("\nMaximum matrix");
     for(i=0;i<*n;i++){
         printf("\n");
         for(j=0;j<*m;j++){
